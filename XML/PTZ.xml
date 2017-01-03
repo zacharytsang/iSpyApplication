@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PTZSettings>
+  <Camera Make="Foscam" Version="FI8918W" id="0">
+    <CommandURL>/decoder_control.cgi</CommandURL>
+    <Commands>
+      <Center>command=25</Center>
+      <Left>command=6</Left>
+      <LeftUp>command=91</LeftUp>
+      <Right>command=4</Right>
+      <RightUp>command=90</RightUp>
+      <Up>command=0</Up>
+      <Down>command=2</Down>
+      <LeftDown>command=93</LeftDown>
+      <RightDown>command=92</RightDown>
+      <Stop>command=1</Stop>
+      <ZoomIn>
+      </ZoomIn>
+      <ZoomOut>
+      </ZoomOut>
+      <ExtendedCommands>
+          <Command Name="Stop">command=1</Command>
+          <Command Name="IR on">command=95</Command>
+          <Command Name="IR off">command=94</Command>
+          <Command Name="H Patrol">command=28</Command>
+          <Command Name="V Patrol">command=26</Command>
+      </ExtendedCommands>
+    </Commands>
+  </Camera>
+    <Camera Make="Axis" Version="P5534" id="1">
+        <CommandURL>/axis-cgi/com/ptz.cgi?camera=1</CommandURL>
+        <Commands>
+            <Center></Center>
+            <Left>continuouspantiltmove=-10,0</Left>
+            <LeftUp>continuouspantiltmove=-10,10</LeftUp>
+            <Right>continuouspantiltmove=10,0</Right>
+            <RightUp>continuouspantiltmove=10,10</RightUp>
+            <Up>continuouspantiltmove=0,10</Up>
+            <Down>continuouspantiltmove=0,-10</Down>
+            <LeftDown>continuouspantiltmove=-10,-10</LeftDown>
+            <RightDown>continuouspantiltmove=10,-10</RightDown>
+            <Stop>continuouspantiltmove=0,0</Stop>
+            <ZoomIn>rzoom=500</ZoomIn>
+            <ZoomOut>rzoom=-500</ZoomOut>
+            <ExtendedCommands>
+                <Command Name="Auto focus on">autofocus=on</Command>
+                <Command Name="Auto focus off">autofocus=off</Command>
+                <Command Name="Auto iris on">autoiris=on</Command>
+                <Command Name="Auto iris off">autoiris=off</Command>
+                <Command Name="Backlight on">backlight=on</Command>
+                <Command Name="Backlight off">backlight=off</Command>
+                <Command Name="IR cut filter on">ircutfilter=on</Command>
+                <Command Name="IR cut filter off">ircutfilter=off</Command>
+                <Command Name="IR cut filter">ircutfilter=auto</Command>
+            </ExtendedCommands>
+        </Commands>
+    </Camera>
+    <Camera Make="TRENDnet" Version="TV-IP422W" id="2">
+        <CommandURL>/admin/ptctl.cgi</CommandURL>
+        <Commands>
+            <Center>move=h</Center>
+            <Left>move=left</Left>
+            <LeftUp></LeftUp>
+            <Right>move=right</Right>
+            <RightUp></RightUp>
+            <Up>move=up</Up>
+            <Down>move=down</Down>
+            <LeftDown></LeftDown>
+            <RightDown></RightDown>
+            <Stop>move=stop</Stop>
+            <ZoomIn></ZoomIn>
+            <ZoomOut></ZoomOut>
+            <ExtendedCommands>
+                <Command Name="IR on">/admin/trigger.cgi?night=1</Command>
+                <Command Name="IR off">/admin/trigger.cgi?night=0</Command>
+            </ExtendedCommands>
+        </Commands>
+    </Camera>
+    <Camera Make="Edimax" Version="7010PTn" id="3">
+        <CommandURL>/camera-cgi/com/ptz.cgi</CommandURL>
+        <Commands>
+            <Center>move=center</Center>
+            <Left>move=left</Left>
+            <LeftUp>move=upleft</LeftUp>
+            <Right>move=right</Right>
+            <RightUp>move=upright</RightUp>
+            <Up>move=up</Up>
+            <Down>move=down</Down>
+            <LeftDown>move=downleft</LeftDown>
+            <RightDown>move=downright</RightDown>
+            <Stop>move=stop</Stop>
+            <ZoomIn> </ZoomIn>
+            <ZoomOut> </ZoomOut>
+            <ExtendedCommands> </ExtendedCommands>
+        </Commands>
+    </Camera>
+    <Camera Make="INSTAR" Version="IN-40xx,IN-29xx" id="4">
+        <CommandURL>/decoder_control.cgi</CommandURL>
+        <Commands>
+            <Center>command=31</Center>
+            <Left>command=4</Left>
+            <LeftUp></LeftUp>
+            <Right>command=6</Right>
+            <RightUp></RightUp>
+            <Up>command=0</Up>
+            <Down>command=2</Down>
+            <LeftDown></LeftDown>
+            <RightDown></RightDown>
+            <Stop>command=1</Stop>
+            <ZoomIn>command=16</ZoomIn>
+            <ZoomOut>command=18</ZoomOut>
+            <ExtendedCommands> </ExtendedCommands>
+        </Commands>
+    </Camera>
+    <Camera Make="TRENDnet" Version="TV-IP602WIN" id="5">
+        <CommandURL>/eng/ptdc.cgi</CommandURL>
+        <Commands>
+            <Center>command=go_home</Center>
+            <Left>command=set_relative_pos&amp;posX=-1&amp;posY=0</Left>
+            <LeftUp>command=set_relative_pos&amp;posX=-1&amp;posY=1</LeftUp>
+            <Right>command=set_relative_pos&amp;posX=1&amp;posY=0</Right>
+            <RightUp>command=set_relative_pos&amp;posX=1&amp;posY=1</RightUp>
+            <Up>command=set_relative_pos&amp;posX=0&amp;posY=1</Up>
+            <Down>command=set_relative_pos&amp;posX=0&amp;posY=-1</Down>
+            <LeftDown>command=set_relative_pos&amp;posX=-1&amp;posY=-1</LeftDown>
+            <RightDown>command=set_relative_pos&amp;posX=1&amp;posY=-1</RightDown>
+            <Stop>command=stop</Stop>
+            <ZoomIn></ZoomIn>
+            <ZoomOut></ZoomOut>
+            <ExtendedCommands>
+            </ExtendedCommands>
+        </Commands>
+    </Camera>
+    <Camera Make="Linksys" Version="WVC200" id="6">
+        <CommandURL>/pt/ptctrl.cgi</CommandURL>
+        <Commands>
+            <Center>mv=H</Center>
+            <Left>mv=L,5</Left>
+            <LeftUp>mv=UL,5</LeftUp>
+            <Right>mv=R,5</Right>
+            <RightUp>mv=UR,5</RightUp>
+            <Up>mv=U,5</Up>
+            <Down>mv=D,5</Down>
+            <LeftDown>mv=DL,5</LeftDown>
+            <RightDown>mv=DR,5</RightDown>
+            <Stop/>
+            <ZoomIn/>
+            <ZoomOut/>
+            <ExtendedCommands>
+                <Command Name="H Patrol">preset=move,102</Command>
+                <Command Name="V Patrol">preset=move,101</Command>
+                <Command Name="Motion Track">preset=move,100</Command>
+                <Command Name="Preset 1">preset=move,1</Command>
+                <Command Name="Preset 2">preset=move,2</Command>
+                <Command Name="Preset 3">preset=move,3</Command>
+            </ExtendedCommands>
+        </Commands>
+    </Camera>
+    <Camera Make="Panasonic" Version="BL-C111A" id="7">
+        <CommandURL>/nphControlCamera</CommandURL>
+        <Commands>
+            <Center>Direction=HomePosition</Center>
+            <Left>Direction=PanLeft</Left>
+            <LeftUp>Direction=PanLeft</LeftUp>
+            <Right>Direction=PanRight</Right>
+            <RightUp>Direction=PanRight</RightUp>
+            <Up>Direction=TiltUp</Up>
+            <Down>Direction=TiltDown</Down>
+            <LeftDown>Direction=PanLeft</LeftDown>
+            <RightDown>Direction=PanRight</RightDown>
+            <Stop />
+            <ZoomIn />
+            <ZoomOut />
+            <ExtendedCommands>
+            </ExtendedCommands>
+        </Commands>
+    </Camera>
+    <Camera Make="Vilar" Version="VS-IPC1002" id="8">
+        <CommandURL>/cgi-bin/action?action=cam_mv&amp;lang=eng</CommandURL>
+        <Commands>
+            <Center>diretion=cam_home</Center>
+            <Left>diretion=cam_left</Left>
+            <LeftUp>
+            </LeftUp>
+            <Right>diretion=cam_right</Right>
+            <RightUp>
+            </RightUp>
+            <Up>diretion=cam_up</Up>
+            <Down>diretion=cam_down</Down>
+            <LeftDown>
+            </LeftDown>
+            <RightDown>
+            </RightDown>
+            <Stop></Stop>
+            <ZoomIn>
+            </ZoomIn>
+            <ZoomOut>
+            </ZoomOut>
+            <ExtendedCommands>
+                <Command Name="Resolution 640x480">/cgi-bin/action?action=resolution_chg&amp;CamInfo_Resolution=640x480&amp;lang=eng</Command>
+                <Command Name="Resolution 320x240">/cgi-bin/action?action=resolution_chg&amp;CamInfo_Resolution=320x240&amp;lang=eng</Command>
+                <Command Name="Resolution 160x120">/cgi-bin/action?action=resolution_chg&amp;CamInfo_Resolution=160x120&amp;lang=eng</Command>
+                <Command Name="Quality high">/cgi-bin/action?action=compress_chg&amp;CamInfo_Compression=20&amp;lang=eng</Command>
+                <Command Name="Quality std">/cgi-bin/action?action=compress_chg&amp;CamInfo_Compression=30&amp;lang=eng</Command>
+                <Command Name="Quality low">/cgi-bin/action?action=compress_chg&amp;CamInfo_Compression=60&amp;lang=eng</Command>
+                <Command Name="Pan Scan">/cgi-bin/action?action=pan_scan&amp;lang=eng</Command>
+                <Command Name="Tilt Scan">/cgi-bin/action?action=tilt_scan&amp;lang=eng</Command>
+                <Command Name="Brightness plus">/cgi-bin/action?action=bright_chg&amp;CamInfo_Brightness=add&amp;lang=eng</Command>
+                <Command Name="Brightness std">/cgi-bin/action?action=bright_chg&amp;CamInfo_Brightness=std&amp;lang=eng</Command>
+                <Command Name="Brightness minus">/cgi-bin/action?action=bright_chg&amp;CamInfo_Brightness=sub&amp;lang=eng</Command>
+                <Command Name="Contrast plus">/cgi-bin/action?action=contrast_chg&amp;CamInfo_Contrast=add&amp;lang=eng</Command>
+                <Command Name="Contrast std">/cgi-bin/action?action=contrast_chg&amp;CamInfo_Contrast=std&amp;lang=eng</Command>
+                <Command Name="Contrast minus">/cgi-bin/action?action=contrast_chg&amp;CamInfo_Contrast=sub&amp;lang=eng</Command>
+                <Command Name="Home position">/cgi-bin/action?action=cam_mv&amp;diretion=cam_home&amp;lang=eng</Command>
+            </ExtendedCommands>
+        </Commands>
+    </Camera>
+</PTZSettings>
